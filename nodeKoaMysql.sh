@@ -12,5 +12,5 @@ echo "停止并删除旧容器"
 docker stop node-koa-container
 docker rm  node-koa-container
 echo "启动新容器,服务器端口和容器端口进行映射 -d后台运行 :1.0版本号"
-docker container run -p 9000:9000 -name node-koa-container  -d  node-koa-mysql:1.0
+docker container run -p 9000:9000 --name node-koa-container  -d  node-koa-mysql:1.0
 
